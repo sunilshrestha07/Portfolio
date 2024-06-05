@@ -1,0 +1,1 @@
+export const paddingForNav =`px-4 sm:px-10 xl:px-26 2xl:px-36`
