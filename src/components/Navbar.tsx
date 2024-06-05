@@ -1,15 +1,18 @@
-import { useState } from "react"
 import moon from "/images/moon.png"
 import sun from "/images/sun.png"
 import { paddingForNav } from "../defineSize"
 import Hamburger from "./Hamburger"
+import { useDispatch,useSelector } from "react-redux"
+import { toggleTheme } from "../redux/themSlice"
+import { RootState } from "../redux/store"
 
 export default function Navbar() {
-  const [isDarkModeActive,setIsDarkModeActive]=useState<boolean>(false)
+  const dispatch = useDispatch()
+  const isDarkModeActive = useSelector((state: RootState) => state.theme.isDarkMode);
   const toggleMode = () =>{
-    setIsDarkModeActive(!isDarkModeActive)
+    dispatch(toggleTheme())
   }
-
+  console.log(isDarkModeActive)
 
   
   return (
