@@ -38,8 +38,12 @@ export default function Home() {
                   <p>Hi, I'm Sunil Shrestha. A passionate Full Stack Developer from Banepa, Nepal 📍</p>
                 </div>
                 <div className="flex gap-5 justify-center sm:justify-start">
-                  <img className="h-7 sm:h-7 sm:w-7 xl:h-8 xl:w-8" src={getImage('linkedin')} alt="LinkedIn" />
-                  <img className="h-7 sm:h-7 sm:w-7 xl:h-8 xl:w-8" src={getImage('github')} alt="GitHub" />
+                  <a href="https://www.linkedin.com/in/suneelshrestha/" target="blank">
+                    <img className="h-7 sm:h-7 sm:w-7 xl:h-8 xl:w-8 cursor-pointer" src={getImage('linkedin')} alt="LinkedIn" />
+                  </a>
+                  <a href="https://github.com/sunilshrestha07" target="blank">
+                    <img className="h-7 sm:h-7 sm:w-7 xl:h-8 xl:w-8 cursor-pointer" src={getImage('github')} alt="GitHub" />
+                  </a>
                 </div>
               </div>
               <div className="row-span-1 sm:col-span-1 flex justify-center sm:justify-end pr-0 sm:pr-14 order-1">
@@ -56,20 +60,20 @@ export default function Home() {
               <div className="sm:text-xl xl:text-3xl font-poppins font-semibold text-titleLight dark:text-titleDark flex items-center justify-center sm:justify-start mt-16 sm:mt-0">
                 <p>Tech Stack</p>
               </div>
-              <div className="flex items-center gap-3 sm:gap-6 xl:gap-16 sm:ml-0">
+              <div className="flex flex-row md:justify-start justify-center items-center gap-3 sm:gap-6 xl:gap-16 ">
                 <div className="xl:gap-4 flex items-center">
-                  <span><img className="h-9 sm:h-10 xl:h-14" src={getImage('css')} alt="CSS" /></span>
-                  <span><img className="h-8 sm:h-9 xl:h-12" src={getImage('html')} alt="HTML" /></span>
+                  <span><img className="h-9 sm:h-10 md:h-14" src={getImage('css')} alt="CSS" /></span>
+                  <span><img className="h-8 sm:h-9 md:h-12" src={getImage('html')} alt="HTML" /></span>
                 </div>
                 <div className="gap-2 sm:gap-6 flex items-center">
-                  <span><img className="h-9 sm:h-10 xl:h-14" src={getImage('js')} alt="JavaScript" /></span>
-                  <span><img className="h-[1.6rem] sm:h-7 xl:h-10" src={getImage('ts')} alt="TypeScript" /></span>
+                  <span><img className="h-9 sm:h-10 md:h-14" src={getImage('js')} alt="JavaScript" /></span>
+                  <span><img className="h-[1.6rem] sm:h-7 md:h-10" src={getImage('ts')} alt="TypeScript" /></span>
                 </div>
                 <div className="gap-3 sm:gap-6 flex items-center">
-                  <span><img className="h-7 sm:h-8 xl:h-11" src={getImage('react')} alt="React" /></span>
-                  <span><img className="h-7 sm:h-8 xl:h-11" src={getImage('node')} alt="Node.js" /></span>
-                  <span><img className="h-7 sm:h-8 xl:h-11" src={getImage('db')} alt="Database" /></span>
-                  <span><img className="h-7 sm:h-8 xl:h-11" src={getImage('ex')} alt="Express.js" /></span>
+                  <span><img className="h-7 sm:h-8 md:h-11" src={getImage('react')} alt="React" /></span>
+                  <span><img className="h-7 sm:h-8 md:h-11" src={getImage('node')} alt="Node.js" /></span>
+                  <span><img className="h-7 sm:h-8 md:h-11" src={getImage('db')} alt="Database" /></span>
+                  <span><img className="h-7 sm:h-8 md:h-11" src={getImage('ex')} alt="Express.js" /></span>
                 </div>
               </div>
             </div>

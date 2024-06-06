@@ -17,7 +17,7 @@ export default function Navbar() {
   
   return (
     <>
-        <div className={` h-20 ${isDarkModeActive ? "dark":""}`}>
+        <div className={` h-20 ${isDarkModeActive ? "dark":""} sticky top-0`}>
           <div className={`grid grid-cols-7  h-20 bg-bgLight dark:bg-bgDark transition ease-in-out duration-300 border-b-2 ${paddingForNav}`}>
             {/* logo right section of the navbar */}
               <div className=" col-span-3 flex items-center">
