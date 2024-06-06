@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Home from "./pages/Home"
+import Projects from "./pages/Projects"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
+      <Projects/>
     </>
   )
 }

@@ -17,8 +17,10 @@ export default {
         bgDark:'rgba(25, 24, 34, 100)',
         hoverText:'rgba(27,154,170,100)',
       }
-
     },
+    boxShadow: {
+      'custom-white': '5px 10px 16px -1px rgba(255, 255, 255, 0.3), 0 2px 4px -1px rgba(255, 255, 255, 0.06)',
+    }
   },
   plugins: [],
   darkMode:"class"
