@@ -20,6 +20,7 @@ export default {
     },
     boxShadow: {
       'custom-white': '5px 10px 16px -1px rgba(255, 255, 255, 0.3), 0 2px 4px -1px rgba(255, 255, 255, 0.06)',
+      'custom-black': '5px 10px 16px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(255, 255, 255, 0.06)',
     }
   },
   plugins: [],
