@@ -24,7 +24,7 @@ export default function Hamburger() {
         <div className={`${isMenuActive ? "":"hidden"}`}>
             <div className="absolute  bg-bgLight dark:bg-bgDark top-20 right-0 w-full h-screen flex flex-col p-10 gap-8">
                 {menuItems.map((items,index)=>(
-                    <div className=" flex flex-col text-xl text-end gap-32" key={index}>
+                    <div className=" flex flex-col text-xl text-end gap-32 cursor-pointer hover:text-hoverText" key={index}>
                         {items.text}
                     </div>
                 ))}
