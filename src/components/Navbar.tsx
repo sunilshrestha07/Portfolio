@@ -5,6 +5,7 @@ import Hamburger from "./Hamburger"
 import { useDispatch,useSelector } from "react-redux"
 import { toggleTheme } from "../redux/themSlice"
 import { RootState } from "../redux/store"
+import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const dispatch = useDispatch()
@@ -27,18 +28,27 @@ export default function Navbar() {
               <div className=" col-span-4 h-full grid grid-cols-5  font-poppins text-base font-medium items-center text-titleLight dark:text-titleDark gap-4 xl:text-xl text-end">
                 {/* navlinks hidden when small than sm  */}
                 <div className=" col-span-4 hidden sm:relative sm:top-0 sm:grid sm:grid-cols-4  ">
-                      <div className="cursor-pointer hover:text-hoverText">
-                        Home
-                      </div>
-                      <div className="cursor-pointer hover:text-hoverText">
-                        About
-                      </div>
-                      <div className="cursor-pointer hover:text-hoverText">
-                        Projects
-                      </div>
-                      <div className="cursor-pointer hover:text-hoverText">
-                        Contact
-                      </div>
+                      <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
+                        <div className="cursor-pointer hover:text-hoverText">
+                          Home
+                        </div>
+                      </Link>
+                      <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
+                        <div className="cursor-pointer hover:text-hoverText">
+                          About
+                        </div>
+                      </Link>
+                      <Link to="projects" spy={true} smooth={true} offset={-70} duration={500}>
+                        <div className="cursor-pointer hover:text-hoverText">
+                          Projects
+                        </div>
+                      </Link>
+                      <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+                        <div className="cursor-pointer hover:text-hoverText">
+                          Contact
+                        </div>
+                      </Link>
+                      
                 </div>
                 <div className="-mt-1 sm:-mt-2 col-span-3 sm:col-span-1 grid justify-end sm:justify-center">
                   <img className=" w-7 h-auto cursor-pointer hover:scale-105" src={isDarkModeActive? sun : moon} alt=""  onClick={toggleMode}/>
