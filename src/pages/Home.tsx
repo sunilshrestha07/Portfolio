@@ -50,10 +50,10 @@ export default function Home() {
                           rotate:[0, 30, 0],
                         }}
                         transition={{
-                          duration: 2, // Duration of one cycle
-                          ease: "easeInOut", // Easing function
-                          repeat: Infinity, // Repeat the animation indefinitely
-                          repeatType: "loop", // Loop the animation
+                          duration: 2, 
+                          ease: "easeInOut", 
+                          repeat: Infinity, 
+                          repeatType: "loop", 
                         }}
                         className="h-10" src={wave} alt="wave image" />
                       </div>
