@@ -2,6 +2,7 @@ import { paddingForPages } from "../defineSize"
 import { projects } from "../projectsCluster"
 import { useSelector } from "react-redux"
 import { RootState } from "../redux/store"
+import { motion } from "framer-motion"
 
 export default function Projects() {
     const isDarkModeActive = useSelector((state:RootState)=>state.theme.isDarkMode)
@@ -11,19 +12,38 @@ export default function Projects() {
            <div className=" bg-bgLight dark:bg-bgDark transition ease-in-out duration-300 pb-20">
                 <div className={paddingForPages}>
                     <div className=" flex flex-col gap-16 py-6">
-                        <div className=" flex flex-col gap-5">
+                        <motion.div
+                        initial={{
+                            opacity:0,
+                            translateX:-50
+                            }}
+                            whileInView={{opacity:1,
+                            translateX:0,
+                            transition:{delay:0.2,duration:.8,}}}
+                            viewport={{ once: true,amount:0.5 }}
+                        className=" flex flex-col gap-5">
                             <div className=" text-4xl font-poppins font-bold text-hoverText">
                                 <p>Projects</p>
                             </div>
                             <div className=" text-2xl font-bold font-poppins text-titleLight dark:text-titleDark">
                                 <p>Each project is a unique piece of development</p>
                             </div>
-                        </div>
+                        </motion.div>
                         <div className="">
                             {/* project cluster displayed using map extraced from the projectsCluster interface */}
                             <div className=" flex flex-col gap-20">
                                 {projects.map((project,index)=>(
-                                    <div className=" h-1/2 grid grid-rows-2 sm:grid-rows-none sm:grid-cols-6 gap-2 py-4 rounded-xl shadow-2xl shadow-custom-black dark:shadow-custom-white border-2 dark:border-slate-700 " key={index}>
+                                    <motion.div 
+                                    initial={{
+                                        opacity:0,
+                                        translateY:50
+                                        }}
+                                        whileInView={{
+                                        opacity:1,
+                                        translateY:0,
+                                        transition:{delay:0.2,duration:.8,}}}
+                                        viewport={{ once: true,amount:0.5 }}
+                                    className=" h-1/2 grid grid-rows-2 sm:grid-rows-none sm:grid-cols-6 gap-2 py-4 rounded-xl shadow-2xl shadow-custom-black dark:shadow-custom-white border-2 dark:border-slate-700 " key={index}>
                                         <div className=" h-full row-span-1 sm:col-span-3 px-2">
                                             <div className="h-full overflow-hidden rounded-xl object-cover">
                                                 <img className="h-full w-full hover:scale-110 transition ease-in-out duration-300" src={project.image} alt="" />
@@ -57,7 +77,7 @@ export default function Projects() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))}
                             </div>
                         </div>

@@ -4,22 +4,48 @@ import About from "../pages/About"
 import Contact from "../pages/Contact"
 import Home from "../pages/Home"
 import Projects from "../pages/Projects"
+import { motion } from "framer-motion"
 export default function MainPage() {
+
   return (
     <>
-      <Navbar/>
+      <div className="z-50 sticky top-0">
+        <Navbar/>
+      </div>
+
       <div id="home" className="">
         <Home/>
       </div>
-      <div id="about" className="">
+
+      <motion.div 
+      initial={{
+      opacity:0,
+      translateX:-50
+      }}
+      whileInView={{opacity:1,
+      translateX:0,
+      transition:{delay:0.2,duration:.8,}}}
+      viewport={{ once: true,amount:0.5 }}
+      id="about" className="">
         <About/>
-      </div>
+      </motion.div>
+
       <div id="projects" className="">
         <Projects/>
       </div>
-      <div id="contact" className="">
+
+      <motion.div 
+      initial={{
+        opacity:0,
+        translateX:-50
+        }}
+        whileInView={{opacity:1,
+        translateX:0,
+        transition:{delay:0.2,duration:.8,}}}
+        viewport={{ once: true,amount:0.5 }}
+      id="contact" className="">
         <Contact/>
-      </div>
+      </motion.div>
       <Footer/>
     </>
   )
