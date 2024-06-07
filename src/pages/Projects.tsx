@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <>
         <div className={isDarkModeActive ? "dark":""}>
-           <div className=" bg-bgLight dark:bg-bgDark transition ease-in-out duration-300">
+           <div className=" bg-bgLight dark:bg-bgDark transition ease-in-out duration-300 pb-20">
                 <div className={paddingForPages}>
                     <div className=" flex flex-col gap-16 py-6">
                         <div className=" flex flex-col gap-5">
@@ -25,8 +25,8 @@ export default function Projects() {
                                 {projects.map((project,index)=>(
                                     <div className=" h-1/2 grid grid-rows-2 sm:grid-rows-none sm:grid-cols-6 gap-2 py-4 rounded-xl shadow-2xl shadow-custom-black dark:shadow-custom-white border-2 dark:border-slate-700 " key={index}>
                                         <div className=" h-full row-span-1 sm:col-span-3 px-2">
-                                            <div className="h-full overflow-hidden rounded-xl bg-black object-cover">
-                                                <img className="  h-full w-full hover:scale-110 transition ease-in-out duration-300" src={project.image} alt="" />
+                                            <div className="h-full overflow-hidden rounded-xl object-cover">
+                                                <img className="h-full w-full hover:scale-110 transition ease-in-out duration-300" src={project.image} alt="" />
                                             </div>
                                         </div>
                                         <div className=" row-span-1 sm:col-span-3 ">
@@ -37,7 +37,7 @@ export default function Projects() {
                                                 <div className="  text-titleLight dark:text-titleDark text-sm xl:text-base">
                                                     <p>{project.description}</p>
                                                 </div>
-                                                <div className=" flex sm:gap-6 xl:gap-10 pb-6  flex-row justify-around sm:justify-start">
+                                                <div className=" flex sm:gap-6 xl:gap-10 pb-6 flex-row justify-around sm:justify-start">
                                                     <div className=" flex bg-hoverText px-3 py-1 xl:px-4 xl:py-2 rounded-lg font-poppins font-medium gap-2 items-center justify-center hover:scale-105 transition ease-in-out duration-300">
                                                         <a href={project.codeLink} target="blank">
                                                             Code
