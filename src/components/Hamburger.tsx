@@ -39,7 +39,7 @@ export default function Hamburger() {
               smooth={true}
               duration={500}
               offset={-70}
-              onClick={handleMenu} // Close the menu on link click
+              onClick={handleMenu} 
             >
               <div className="flex flex-col text-xl text-end gap-32 cursor-pointer hover:text-hoverText">
                 {item.text}

@@ -9,11 +9,11 @@ import { Link } from 'react-scroll';
 
 export default function Navbar() {
   const dispatch = useDispatch()
-  const isDarkModeActive = useSelector((state: RootState) => state.theme.isDarkMode);
   const toggleMode = () =>{
     dispatch(toggleTheme())
   }
-  console.log(isDarkModeActive)
+  const isDarkModeActive = useSelector((state: RootState) => state.theme.isDarkMode);
+  
 
   
   return (
