@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
         <div className={isDarkModeActive ? "dark":"" }>
-            <div className=" bg-bgLight dark:bg-bgDark transition ease-in-out duration-300 mt-0 sm:-mt-28 md:-mt-60 xl:-mt-32
+            <div className=" bg-bgLight dark:bg-bgDark transition ease-in-out duration-300 mt-0 sm:-mt-28 md:-mt-40 xl:-mt-32
             pb-16">
                 <div className={` w-full md:w-4/5 ${paddingForPages} flex flex-col gap-6`}>
                     <div className="flex flex-col gap-4 ">
