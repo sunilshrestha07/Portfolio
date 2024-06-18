@@ -2,7 +2,7 @@ interface Image {
     light: string;
     dark: string;
   }
-  
+  //used to import images
   const images: Record<string, Image> = {
     linkedin: {
       light: "/images/linkedin.png",
