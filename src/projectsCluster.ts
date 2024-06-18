@@ -36,5 +36,14 @@ export const projects: ProjectsInterface[] = [
         codeLinkImage : "/images/github.png",
         liveLinkImage : "/images/share.png",
     },
+    {
+        name : "Hiker Heven",
+        description : "HikerHeaven is a comprehensive hiking website where users can explore various hiking trails, read reviews, and save their favorite hikes. Built with the MERN stack (MongoDB, Express, React, Node.js) using TypeScript and Tailwind CSS" ,
+        image:"/images/hiker.png",
+        codeLink:"https://github.com/sunilshrestha07/HikerHeven",
+        liveLink: "https://hiker-heven.vercel.app/",
+        codeLinkImage : "/images/github.png",
+        liveLinkImage : "/images/share.png",
+    },
 
 ];
