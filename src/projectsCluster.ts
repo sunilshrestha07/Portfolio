@@ -21,7 +21,7 @@ export const projects: ProjectsInterface[] = [
     {
         name : "Moodlift",
         description : "MoodLift is an AI-powered mental health platform that provides personalized well-being suggestions. After users answer initial questions, the AI analyzes the inputs to offer tailored advice on improving mental health. Additionally, users can connect with certified professionals for further guidance, making it a comprehensive resource for mental health support. ",
-        image:"/images/fashion.png",
+        image:"https://firebasestorage.googleapis.com/v0/b/hikerheven.appspot.com/o/profile%2FScreenshot%202024-09-10%20170356.png2734d059-df6d-4132-8caf-035da510a54a?alt=media&token=212682ff-a374-4739-8e7a-5fb42be1dda3",
         codeLink:"https://github.com/sunilshrestha07/moodlift",
         liveLink: "https://fashion-fusion-suneel.vercel.app/",
         codeLinkImage : "/images/github.png",
