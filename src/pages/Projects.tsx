@@ -45,8 +45,8 @@ export default function Projects() {
                                         viewport={{ once: true,amount:0.5 }}
                                     className=" h-1/2 grid grid-rows-2 sm:grid-rows-none sm:grid-cols-6 gap-2 py-4 rounded-xl shadow-2xl shadow-custom-black dark:shadow-custom-white border-2 dark:border-slate-700 " key={index}>
                                         <div className=" h-full row-span-1 sm:col-span-3 px-2">
-                                            <div className="h-full overflow-hidden rounded-xl object-cover">
-                                                <img className="h-full w-full hover:scale-110 transition ease-in-out duration-300" src={project.image} alt="" />
+                                            <div className="h-full overflow-hidden rounded-xl object-cover flex justify-center items-center">
+                                                <img className="aspect-video w-full hover:scale-110 transition ease-in-out duration-300" src={project.image} alt="" />
                                             </div>
                                         </div>
                                         <div className=" row-span-1 sm:col-span-3 ">
